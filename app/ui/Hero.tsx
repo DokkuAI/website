@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             your documents.
           </p>
           <div
-            className={`flex flex-col items-center h-fit  w-full mx-auto mb-16 transition-all duration-1000 delay-500 ${
+            className={`flex flex-col items-center h-fit  w-full mx-auto transition-all duration-1000 delay-500 ${
               isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
             }`}
           >

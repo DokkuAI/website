@@ -5,7 +5,9 @@ import ReplaceIcon from "./Replaces";
 
 export enum FeatureTag {
   Chat = "Chat",
+  Write = "Write",
   Annotate = "Annotate",
+  Organize = "Organize",
   Plan = "Plan",
 }
 
@@ -35,7 +37,7 @@ export default function Features({
   replaces,
 }: FeaturesProps) {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-11 bg-white">
       <div className="flex flex-col items-center mx-auto px-4">
         <div className="w-full max-w-5xl">
           <div className="w-full ">
@@ -53,7 +55,7 @@ export default function Features({
               >
                 {heading}
               </h1>
-              <p className="text-gray-600 mb-8">{subheading}</p>
+              <p className="text-gray-600">{subheading}</p>
             </div>
             <div className="flex-1 ml-8">
               <ul className="space-y-2 mb-8">
