@@ -32,7 +32,7 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({
   return (
     <div className="flex flex-col items-center border border-gray-200 bg-white p-6 rounded-lg flex flex-col">
       <blockquote className="text-center text-md mb-2 flex-grow">
-        "{testimonial.quote}"
+        {testimonial.quote}
       </blockquote>
       <div className="flex mt-2 items-center">
         <Image

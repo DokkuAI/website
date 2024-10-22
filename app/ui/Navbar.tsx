@@ -29,9 +29,9 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
       </nav>
-      <button className="px-4 py-2 bg-gray-800 text-white rounded-sm font-medium hover:bg-gray-700 transition-colors">
+      {/* <button className="px-4 py-2 bg-gray-800 text-white rounded-sm font-medium hover:bg-gray-700 transition-colors">
         Join Waitlist
-      </button>
+      </button> */}
     </header>
   );
 };
