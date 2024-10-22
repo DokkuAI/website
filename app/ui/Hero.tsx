@@ -11,9 +11,9 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen text-gray-800 bg-dot-pattern">
-      <div className="bg-white backdrop-blur-sm min-h-screen">
-        <main className="container mx-auto text-center py-20">
+    <div className="flex flex-col items-center text-gray-800 bg-dot-pattern w-full">
+      <div className="bg-white backdrop-blur-sm ">
+        <main className="flex flex-col items-center mx-auto text-center py-20">
           <h1
             className={`text-4xl font-bold mb-6 transition-all duration-1000 ${
               isVisible
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             your documents.
           </p>
           <div
-            className={`relative w-full max-w-4xl mx-auto aspect-video mb-16 transition-all duration-1000 delay-500 ${
+            className={`flex flex-col items-center h-fit  w-full mx-auto mb-16 transition-all duration-1000 delay-500 ${
               isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
             }`}
           >
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
               alt="Document Management Workspace Interface"
               width={1022}
               height={651}
-              className="rounded-sm shadow-lg"
+              className="rounded-sm"
             />
           </div>
           <div
