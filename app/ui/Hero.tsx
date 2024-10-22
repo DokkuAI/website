@@ -11,9 +11,9 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center text-gray-800 bg-dot-pattern w-full">
+    <div className="flex flex-col items-center pt-16 w-full">
       <div className="bg-white backdrop-blur-sm ">
-        <main className="flex flex-col items-center mx-auto text-center py-20">
+        <main className="flex flex-col items-center mx-auto text-center py-11">
           <h1
             className={`text-4xl font-bold mb-6 transition-all duration-1000 ${
               isVisible
@@ -24,17 +24,17 @@ const Hero: React.FC = () => {
             Document Management Workspace
           </h1>
           <p
-            className={`text-lg text-gray-600 mb-12 max-w-2xl mx-auto transition-all duration-1000 delay-300 ${
+            className={`text-lg  mb-12 max-w-2xl mx-auto transition-all duration-1000 delay-300 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"
             }`}
           >
             An innovative tool designed to transform how you
-            <span className="text-gray-800 font-semibold"> write</span>,
-            <span className="text-gray-800 font-semibold"> plan</span>,
-            <span className="text-gray-800 font-semibold"> chat</span>,
-            <span className="text-gray-800 font-semibold"> annotate</span>, and
+            <span className=" font-semibold"> write</span>,
+            <span className=" font-semibold"> plan</span>,
+            <span className=" font-semibold"> chat</span>,
+            <span className=" font-semibold"> annotate</span>, and
             <span className="texSure, Chandt-gray-800 font-semibold">
               {" "}
               organize
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <h2 className="text-xl font-semibold mb-8 text-gray-700">
+            <h2 className="text-xl font-semibold mb-8 ">
               Trusted by Researchers, Engineers, Managers, and Individuals at
             </h2>
             <div className="flex justify-center items-center space-x-12">

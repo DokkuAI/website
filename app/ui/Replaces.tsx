@@ -9,7 +9,7 @@ const ReplaceIcon: React.FC<Replaces> = ({ name, image, alt }) => {
         <Image src={image} alt={alt} width={30} height={30} />
       </div>
       <div className="flex-grow">
-        <h2 className="text-xl font-bold text-gray-700">{name}</h2>
+        <h2 className="text-xl font-bold">{name}</h2>
       </div>
     </div>
   );

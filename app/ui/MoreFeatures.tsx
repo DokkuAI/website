@@ -9,7 +9,7 @@ export default function FeatureSection() {
         >
           All this, and much more
         </h1>
-        <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p className="text-xl text-center mb-12 max-w-3xl mx-auto">
           Whether it's our unbeatable security, seamless integrations, or
           unmatched ease of use, here are more reasons you should switch to
           DokkuAI today.
@@ -20,6 +20,8 @@ export default function FeatureSection() {
             title="Create Multiple Workspaces"
             description="Play across multiple workspace to avoid any disruption and reduce workload for working with different files."
             imageSrc="/features/multiple-workspaces.jpg"
+            width={528}
+            height={318}
           />
           <FeatureCard
             title="Multiple Formats Supported"
@@ -54,10 +56,14 @@ function FeatureCard({
   title,
   description,
   imageSrc,
+  width = 300,
+  height = 320,
 }: {
   title: string;
   description: string;
   imageSrc: string;
+  width?: number;
+  height?: number;
 }) {
   return (
     <div className="flex flex-col items-center text-center bg-white p-4 rounded-lg border border-gray-200 max-h-[458px]">
@@ -66,9 +72,9 @@ function FeatureCard({
       <Image
         src={imageSrc}
         alt={title}
-        width={528}
-        height={320}
-        className="w-auto h-auto rounded-md"
+        width={width}
+        height={height}
+        className="rounded-md"
       />
     </div>
   );

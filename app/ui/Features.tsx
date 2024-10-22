@@ -37,7 +37,7 @@ export default function Features({
   replaces,
 }: FeaturesProps) {
   return (
-    <section className="py-11 bg-white">
+    <section id="features" className="py-11 bg-white">
       <div className="flex flex-col items-center mx-auto px-4">
         <div className="w-full max-w-5xl">
           <div className="w-full ">
@@ -55,14 +55,14 @@ export default function Features({
               >
                 {heading}
               </h1>
-              <p className="text-gray-600">{subheading}</p>
+              <p>{subheading}</p>
             </div>
             <div className="flex-1 ml-8">
               <ul className="space-y-2 mb-8">
                 {featureList.map((feature, index) => (
                   <li key={index} className="flex items-center">
                     <CheckIcon className="h-5 w-5 text-blue-500 mr-2 flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
+                    <span>{feature}</span>
                   </li>
                 ))}
               </ul>
