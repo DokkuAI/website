@@ -14,7 +14,7 @@ export default function FAQSection() {
     <section id="faqs" className="py-11">
       <div className="mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">FAQs</h2>
-        <div className="max-w-3xl mx-auto">
+        <div className="mx-auto">
           {faqData.map((faq, index) => (
             <FAQItem key={index} faq={faq} />
           ))}

@@ -6,8 +6,11 @@ const Navbar: React.FC = () => {
   return (
     <header className="container mx-auto flex items-center justify-between py-6">
       <div className="flex items-center space-x-2">
-        <div className="h-8 w-8 bg-gray-800 rounded-sm"></div>
-        <span className="text-xl font-semibold">DokkuAI</span>
+        <img
+          src="/logos/dokkuai_logo_with_name.png"
+          alt="DokkuAI Logo"
+          className="h-auto w-36"
+        />
       </div>
       <nav>
         <ul className="flex space-x-6">

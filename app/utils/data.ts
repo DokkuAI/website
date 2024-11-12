@@ -17,11 +17,6 @@ export const features: FeaturesProps[] = [
     image: "/features/chat.jpg",
     replaces: [
       {
-        name: "ChatGPT",
-        image: "/competitor-logos/chatgpt.jpg",
-        alt: "ChatGPT Logo",
-      },
-      {
         name: "Jenni",
         image: "/competitor-logos/jenniai.jpg",
         alt: "Jenni Logo",
