@@ -7,7 +7,7 @@ const testimonials: Testimonial[] = [
     name: "Ritesh Pandey",
     title: "Program Manager",
     company: "Amazon",
-    avatar: "/testimonial.jpg",
+    avatar: "/testimonials/ritesh_pandey.jpeg",
   },
   {
     quote:
@@ -15,7 +15,7 @@ const testimonials: Testimonial[] = [
     name: "Soumya Sharma",
     title: "Pre-doctoral Researcher",
     company: "Google Deepmind",
-    avatar: "/testimonial.jpg",
+    avatar: "/testimonials/soumya.jpeg",
   },
   {
     quote:
@@ -23,7 +23,7 @@ const testimonials: Testimonial[] = [
     name: "Jason Bias",
     title: "VP Program Management",
     company: "Mattermost",
-    avatar: "/testimonial.jpg",
+    avatar: "/testimonials/jason_bias.jpg",
   },
   {
     quote:
@@ -31,7 +31,15 @@ const testimonials: Testimonial[] = [
     name: "Mohit Papneja",
     title: "Technical Operations Engineer",
     company: "Google",
-    avatar: "/testimonial.jpg",
+    avatar: "/testimonials/mohit_papneja.jpg",
+  },
+  {
+    quote:
+      "As a professor, I find DokkuAI to be an invaluable tool in the research process. It transforms how I manage and interact with complex documents, making it easier to annotate, organize, and collaborate with colleagues. Its AI-driven features not only streamline workflows but also enhance our ability to generate deeper insights and foster innovation in our academic work.",
+    name: "Dr. Priya Ranjan",
+    title: "Professor, and Head",
+    company: "University of Petroleum and Energy Studies",
+    avatar: "/testimonials/dr_priya_ranjan.jpg",
   },
 ];
 
