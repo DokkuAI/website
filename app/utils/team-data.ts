@@ -13,10 +13,4 @@ export const teamMembers: TeamMember[] = [
     image: "/team/devesh.jpg",
     linkedin: "https://www.linkedin.com/in/devesh-verma/",
   },
-  {
-    name: "Akash Verma",
-    role: "Technical",
-    image: "/team/akash.jpg",
-    linkedin: "https://www.linkedin.com/in/akash-verma03/",
-  },
 ];

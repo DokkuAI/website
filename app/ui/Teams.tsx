@@ -9,20 +9,51 @@ export interface TeamMember {
 }
 
 const TeamSection: React.FC = () => {
+  // Filter out Devesh Verma for the main team section
+  const coreTeam = teamMembers.filter(
+    (member) => member.name !== "Devesh Verma"
+  );
+  // Find Devesh Verma for contributors section
+  const contributors = teamMembers.filter(
+    (member) => member.name === "Devesh Verma"
+  );
+
   return (
-    <section className="py-11">
-      <div className="mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-2">
-          Meet our team members
-        </h2>
-        <p className="text-xl text-center mb-12">Makers behind DokkuAI</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
-            <TeamMemberCard key={index} member={member} />
-          ))}
+    <>
+      {/* Team Section */}
+      <section className="py-11">
+        <div className="mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-2">
+            Meet our team members
+          </h2>
+          <p className="text-xl text-center mb-12">Makers behind DokkuAI</p>
+          <div className="grid grid-cols-1 gap-8">
+            {coreTeam.map((member, index) => (
+              <TeamMemberCard key={index} member={member} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Contributors Section */}
+      {contributors.length > 0 && (
+        <section className="py-11">
+          <div className="mx-auto px-4">
+            <h2 className="text-2xl font-bold text-center mb-2">
+              Contributors
+            </h2>
+            <p className="text-xl text-center mb-12">
+              Acknowledging their support
+            </p>
+            <div className="grid grid-cols-1 gap-8">
+              {contributors.map((contributor, index) => (
+                <TeamMemberCard key={index} member={contributor} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+    </>
   );
 };
 
