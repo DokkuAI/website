@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/42720b88-231f-4f48-953f-110fd0676898/deploy-status)](https://app.netlify.com/sites/dokkuai/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/42720b88-231f-4f48-953f-110fd0676898/deploy-status)](https://app.netlify.com/sites/dokkuai/deploys?branch=main)
 
 # DokkuAI Website
 
