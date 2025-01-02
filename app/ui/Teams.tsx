@@ -13,10 +13,6 @@ const TeamSection: React.FC = () => {
   const coreTeam = teamMembers.filter(
     (member) => member.name !== "Devesh Verma"
   );
-  // Find Devesh Verma for contributors section
-  const contributors = teamMembers.filter(
-    (member) => member.name === "Devesh Verma"
-  );
 
   return (
     <>
@@ -36,7 +32,7 @@ const TeamSection: React.FC = () => {
       </section>
 
       {/* Contributors Section */}
-      {contributors.length > 0 && (
+      {/* {contributors.length > 0 && (
         <section className="py-11">
           <div className="mx-auto px-4">
             <h2 className="text-2xl font-bold text-center mb-2">
@@ -52,7 +48,7 @@ const TeamSection: React.FC = () => {
             </div>
           </div>
         </section>
-      )}
+      )} */}
     </>
   );
 };
